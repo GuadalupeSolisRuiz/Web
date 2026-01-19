@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+
+<head>
+<title> Formularios </title>
+</head>
+
+<body>
+<h1> Formulario de registro </h1>
+<p> Digita los datos requeridos para el registro </p>
+
+<form id="Registro">
+<input type="text" id="Nombre" placeholder="Nombre" /> <br>
+<input type="text" id="Apellidos" placeholder="Apellidos" /> <br>
+<input type="tel" id="Telefono" placeholder="55-55-55-55" />
+<label for="Edad"> Edad: </label>
+<input type="number" id="Edad" min="1" max="100"/>
+<input type="date" id="FechaN" />
+<p> Selecciona tu fecha de nacimiento </p>
+<button onclick="Registro();">Registro </button>
+</form>
+
+<script>
+function Registro(){
+let Nombre=document.getElementById("Nombre").value;
+alert("Tu nombre es "+Nombre);
+
+let Apellidos=document.getElementById("Apellidos").value;
+alert("Tu apellidos son "+Apellidos);
+
+let Telefono=document.getElementById("Telefono").value;
+alert("Tu telefono es "+Telefono);
+
+let Edad=document.getElementById("Edad").value;
+alert("Tu Edad es "+Edad);
+
+let FechaN=document.getElementById("FechaN").value;
+alert("Tu fecha de nacimiento es "+FechaN);
+
+}
+
+</script>
+
+</body>
+
+</html>
