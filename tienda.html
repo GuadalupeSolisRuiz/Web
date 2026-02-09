@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de accesorios para perros</title>
+</head>
+<body>
+    <h1>Teienda para perros</h1>
+   <form action="Proceso.php" Method="POST" id="Registro" ><br>
+    <input type="text" name="Nombre"id="nombre" placeholder="Nombre"><br>
+    <input type="date" name="Fecha" id="fecha" placeholder="Fecha"><br>
+    <input type="tel" name="Telefono" id="Telefono" placeholder="55-55-55-55"><br>
+    <select name="Productos" id="productos"><br>
+        <option value="">Selecciona una opción</option>
+        <option value="Correap">Correa para cahorro pequeño</option>
+        <option value="Correag">Correa para cahorro grande</option>
+        <option value="Camag">Cama grande</option>
+        <option value="Casag">Casa grande</option>
+        <option value="Casap">Casa pequeña</option>
+        <option value="Camap">Cama pequeña</option>
+        <option value="Noño">Moño</option>
+        <option value="Comederop">Comedero pequeño</option>
+        <option value="Comederog">Comedero grande</option>
+        <option value="Juguete">Juguete de tela</option>
+
+    </select>
+
+    <input type="number" name="Cantidad" id="cantidad" min="1" max="20" placeholder="Cantidad">
+    <input type="submit" value="Comprar" name="btn_comprar">
+   </form> 
+</body>
+</html>
