@@ -33,7 +33,7 @@ $rol = $_SESSION['rol'];
     <div class="sidebar d-flex flex-column p-3">
         <div class="d-flex align-items-center mb-4 text-white text-decoration-none">
             <i class="bi bi-mortarboard-fill fs-2 me-2"></i>
-            <span class="fs-4 fw-bold">Nombre Escuela</span>
+            <span class="fs-4 fw-bold">Colegio Americano</span>
         </div>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
@@ -55,7 +55,7 @@ $rol = $_SESSION['rol'];
                 <li><a href="#" class="nav-link"><i class="bi bi-database-fill me-2"></i> Respaldos</a></li>
             <?php endif; ?>
 
-            <li><a href="#" class="nav-link"><i class="bi bi-building me-2"></i> Cita al Plantel</a></li>
+            <li><a href="cita.php" class="nav-link"><i class="bi bi-building me-2"></i> Cita al Plantel</a></li>
         </ul>
     </div>
 
@@ -69,7 +69,7 @@ $rol = $_SESSION['rol'];
                 <ul class="dropdown-menu dropdown-menu-end shadow border-0">
                     <li><a class="dropdown-item" href="#"><i class="bi bi-person me-2"></i>Cuenta</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item text-danger" href="logout.php"><i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión</a></li>
+                    <li><a class="dropdown-item text-danger" href="includes/cerrar.php"><i class="bi bi-box-arrow-right me-2"></i>Cerrar Sesión</a></li>
                 </ul>
             </div>
         </nav>
@@ -81,6 +81,13 @@ $rol = $_SESSION['rol'];
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
     </div>
 <?php endif; ?>
+
+<?php if(isset($_GET['cita'])): ?>
+<div class="alert alert-success">
+La cita fue registrada correctamente
+</div>
+<?php endif; ?>
+
 <h2 class="mb-4 text-secondary">Bienvenido, <?php echo $_SESSION['nombre']; ?></h2>
             <div class="row g-4">
                 <div class="col-md-8">

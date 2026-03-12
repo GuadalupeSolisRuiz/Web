@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $pass = "";
-$db   = "colegio_db";
+$db   = "colegio_bd";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 

@@ -37,7 +37,13 @@
         </div>
         <button type="submit" name="btn_entrar" class="btn btn-purple w-100 py-2 fw-bold mt-3">Iniciar Sesión</button>
     </form>
+    <div class="container">
+    <div class="col"></div>
+    <div class="col mt-3">
+        <a href="procesar_usuario.php" class="text-decoration-none text-secondary">registrate</a>
+    </div>
 </div>
 
+</div>
 </body>
 </html>

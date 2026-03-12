@@ -8,7 +8,7 @@ include 'includes/db.php';
 if (isset($_POST['btn_entrar'])) {
     // 3. Recibimos el correo y la contraseña del formulario de login
     $correo = mysqli_real_escape_string($conn, $_POST['correo']);
-    $password = $_POST['password'];
+    $password = md5($_POST['password']);
 
     // 4. Buscamos si existe un usuario con ese correo
     $consulta = "SELECT * FROM usuarios WHERE correo = '$correo'";
